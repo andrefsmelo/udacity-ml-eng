@@ -83,3 +83,6 @@ Error = (2)² + (-2)² + (-4)² + (3)² + (6)² + (4)² = 85
 - parameter λ : mutiples the error (weight)
 - L1 is computationally inefficient (unless data is sparse)
 - L1 helps in features selection
+
+## Neural network
+Can be used to solve the regression problem too.
