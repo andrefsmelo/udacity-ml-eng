@@ -18,3 +18,14 @@ P(Red/Alex,Brenda) = P(Red/Alex) * P(Red/Brenda)
 **Bag of words:** Returns a matrix with the frequency of the words in that text
 
 _Naive Bayes' is an extension of Bayes' theorem that assumes that all the features are independent of each other_
+
+**Precision:** `[True Positives/(True Positives + False Positives)]`
+
+**Recall(sensitivity):** `[True Positives/(True Positives + False Negatives)]`
+
+## advantages
+- ability to handle an extremely large number of features
+- performs well even with the presence of irrelevant features and is relatively unaffected by them
+- relative simplicity
+- tuning it's parameters is rarely ever necessary, except usually in cases where the distribution of the data is known
+- rarely ever overfits the data
