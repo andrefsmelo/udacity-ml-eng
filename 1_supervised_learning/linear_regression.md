@@ -52,9 +52,7 @@ wi = wi - ∂/∂wi(Error) * α , i = {0, 1, ... , n}
 
 ## Other forms to minimize the error
 
-> First order condition
-
-> Matrix solution
+> Closed Solution (First order condition + Matrix solution)
 
 ## Model characteristics
 
@@ -86,3 +84,4 @@ Error = (2)² + (-2)² + (-4)² + (3)² + (6)² + (4)² = 85
 
 ## Neural network
 Can be used to solve the regression problem too.
+(ReLU combinations without softmax)
