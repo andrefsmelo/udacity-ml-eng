@@ -5,6 +5,8 @@ Measures the heterogeneity in a set place (opposite of knowledge)
 
 ![entropy](http://dni-institute.in/blogs/wp-content/uploads/2015/08/Entrop.png)
 
+ **pi**: Probability of a target variable in a sample
+
 **Information gain:** Change in Entropy
 
 **Split rule:** Best information gain

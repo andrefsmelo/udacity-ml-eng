@@ -6,12 +6,22 @@ Need to return a specific answer
 - Multi classification
 
 ### Boundary line
+W*x + b = 0
+
+W = (w1, w2, ...)
+
+x = (x1, x2, ...)
+
+If W*x + b >= 0 -> ŷ = 1
+
+If W*x + b < 0 -> ŷ = 0
+
 Separates the occurrence of a classification on the cartesian plane with a line.
 
 _The Boundary can be a plane or other hyperplane depending the n dimension_
 
 ### Perceptrons
-structural block of neural networks (coding of the equation)
+structural block of neural networks (coding of the equation in a little graph)
 
 **first node (Σ)**: Receives the inputs and the bias and calculates the linear function result
 
@@ -19,11 +29,15 @@ structural block of neural networks (coding of the equation)
 
 _Can be represented with the bias inside of the first node or the bias as a input_
 
-**Perceptrons with logical operators**
+**Perceptrons applications as logical operators**
+
+logical operators can be represented with perceptrons (booleans inputs)
+
+Adjust the weights and the bias to:
 - AND
 - OR
 - NOT
-- XOR
+- XOR (heterogeneous inputs)
 
 ### Creating perceptrons algorithm
 
