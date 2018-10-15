@@ -26,12 +26,18 @@ Large margin -> Small error
 
 Small margin -> Large error
 
-____
+![margin1](https://d17h27t6h515a5.cloudfront.net/topher/2018/January/5a52bf15_margin-geometry-images.001/margin-geometry-images.001.jpeg)
+![margin2](https://d17h27t6h515a5.cloudfront.net/topher/2018/January/5a52bf1e_margin-geometry-images.002/margin-geometry-images.002.jpeg)
+![margin3](https://d17h27t6h515a5.cloudfront.net/topher/2018/January/5a52bf2b_margin-geometry-images.003/margin-geometry-images.003.jpeg)
+![margin4](https://d17h27t6h515a5.cloudfront.net/topher/2018/January/5a52bf35_margin-geometry-images.004/margin-geometry-images.004.jpeg)
+![margin5](https://d17h27t6h515a5.cloudfront.net/topher/2018/January/5a52bf47_margin-geometry-images.005/margin-geometry-images.005.jpeg)
+![margin6](https://d17h27t6h515a5.cloudfront.net/topher/2018/January/5a52bf73_margin-geometry-images.008/margin-geometry-images.008.jpeg)
 
-_Minimize the error using gradient descent_
 
-**C parameter: **
-Gives a weight for the two kinds of error
+
+## Minimize the error using gradient descent
+
+**C parameter:** Gives a weight for the two kinds of error
 
 > Error = C * Classification error + Margin error
 
