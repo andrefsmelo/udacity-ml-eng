@@ -13,11 +13,12 @@
 
 ![false_positive](http://www.personal.ceu.hu/students/08/Olga_Etchevskaia/images/errors.jpg)
 
-P(Red/Alex,Brenda) = P(Red/Alex) * P(Red/Brenda)
-
-**Bag of words:** Returns a matrix with the frequency of the words in that text
+**P(Red/Alex,Brenda) = P(Red/Alex) * P(Red/Brenda)**
+given that Alex and Brenda are independent (Naive)
 
 _Naive Bayes' is an extension of Bayes' theorem that assumes that all the features are independent of each other_
+
+**Bag of words:** Returns a matrix with the frequency of the words in that text
 
 **Precision:** `[True Positives/(True Positives + False Positives)]`
 
