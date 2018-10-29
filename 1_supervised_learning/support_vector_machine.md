@@ -44,3 +44,45 @@ Small margin -> Large error
 Small C: Large margin and may make classification errors
 
 Large C: Classifies points well and may have a small margin
+
+## Polinomial Kernel
+
+**Kernel trick:** When boundary line can't solve the problem, We add a extra dimension that multiples the values in others dimensions. We split the data in the new dimension with a n-1 dimension boundary hyperplane and turn back to the original number of dimensions.
+
+
+                    2 dimensions ---> 5 dimensions
+
+                          (x, y) ---> (x, y, x², xy, y²) -> 2 degree
+
+                          (2, 3) ---> (2, 3, 4, 6, 9)
+
+    Degree 2 polynomial boundary <--- 4-dimensional boundary hyperplane
+
+                   Linear kernel ---> Polynomial kernel
+
+
+## Radial Basis Function Kernel
+
+We draw a mountain range where the high points correspond to the target variable.
+Like the Polynomial kernel, We split the mountain range by height and turn back to the original line with a polynomial boundary
+
+To draw the mountain range we create mountains above the points and multiplies with positive or negatives values that correspond to the hyperplane that split the values in n-dimensional plane
+
+** Parameter γ: ** Correspond to the height of the mountain and consequently your width
+
+High γ -> Overfit
+
+γ = 1 / 2σ² (σ: standard deviation)
+
+```
+from sklearn.svm import SVC
+model = SVC(kernel='rbf', gamma=10, C=10)
+model.fit(x_values, y_values)
+y_pred = model.predict(X)
+acc = accuracy_score(y, y_pred)
+```
+hyperparameters:
+- C: C parameter
+- kernel: 'linear', 'poly' and 'rbf'
+- degree: max degree
+- gamma : from rbf kernel
