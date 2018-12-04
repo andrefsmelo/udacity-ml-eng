@@ -38,7 +38,7 @@ Este projeto contém três arquivos:
 - `census.csv`: O conjunto de dados do projeto. Você carregará esses dados no notebook.
 - `visuals.py`: Um arquivo Python que contém o código de visualização que é executado nos bastidores. Não o modifique
 
-No terminal ou janela de comando, navegue até a pasta contendo os arquivos do projeto; em seguida, use o comando `jupyter notebook finding_donors_PT.ipynb` para abrir uma janela ou aba do navegador e trabalhar com seu notebook. Alternativamente, você pode usar o comando `jupyter notebook` ou `ipython notebook` e navegar para o arquivo notebook na janela do navegador que abrir. Siga as instruções no notebook e responda a todas as perguntas apresentadas para concluir o projeto com sucesso. Um arquivo **README** também foi fornecido com os arquivos de projeto, contendo as instruções ou informações adicionais necessárias. 
+No terminal ou janela de comando, navegue até a pasta contendo os arquivos do projeto; em seguida, use o comando `jupyter notebook finding_donors_PT.ipynb` para abrir uma janela ou aba do navegador e trabalhar com seu notebook. Alternativamente, você pode usar o comando `jupyter notebook` ou `ipython notebook` e navegar para o arquivo notebook na janela do navegador que abrir. Siga as instruções no notebook e responda a todas as perguntas apresentadas para concluir o projeto com sucesso. Um arquivo **README** também foi fornecido com os arquivos de projeto, contendo as instruções ou informações adicionais necessárias.
 
 ## Enviando o projeto
 
