@@ -26,7 +26,7 @@ Selects aleatory columns to set trees. The result in prediction is the most comm
 
 ## Sklearn decision trees
 
-```
+```python
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
 

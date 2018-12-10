@@ -74,7 +74,7 @@ High γ -> Overfit
 
 γ = 1 / 2σ² (σ: standard deviation)
 
-```
+```python
 from sklearn.svm import SVC
 model = SVC(kernel='rbf', gamma=10, C=10)
 model.fit(x_values, y_values)

@@ -16,7 +16,7 @@ After all, the strong learner will be weighted sum of weak models.
 
 
 #### Sklearn AdaBoost
-```
+```python
 from sklearn.ensemble import AdaBoostClassifier
 from sklearn.tree import DecisionTreeClassifier
 

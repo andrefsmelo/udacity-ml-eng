@@ -32,7 +32,7 @@ w2 = w2 + α
 
 ## Sklearn linear regression
 
-```
+```python
 from sklearn.linear_model import LinearRegression
 
 model = LinearRegression()
