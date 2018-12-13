@@ -11,5 +11,7 @@ Searchs for K clusters in the data based on centroids distance.
 4. Repeat 2 and 3 until the centroids locations do not change
 
 ```python
+from sklearn.cluster import KMeans
 
+KMeans(n_clusters=8, n_init=10, max_iter=300).fit_predict(X)
 ```
