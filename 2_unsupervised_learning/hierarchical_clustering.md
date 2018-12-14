@@ -39,6 +39,7 @@ labels = clust.fit_predict(X)
 
 #### Dendogram
 ![Dendogram](https://www.researchgate.net/profile/Joao_Junqueira2/publication/301419462/figure/download/fig1/AS:352927538532357@1461155890608/Figura-1-Dendograma-de-similaridade.png) <br>
+
 Helps to choose the number of cluster that best fit your data
 
 ```python
@@ -54,4 +55,47 @@ dendogram(linkage_matrix)
 
 plt.show()
 ```
+### Advantages
+- Resulting hierarchical representation can be very informative
+- Provides an additional ability to visualize
+- Especially potent when the dataset contains real hierarchical relationships (e.g. Evolutionary biology)
+
+### Disadvantage
+- Sensitive to noise and outliers
+- Computationally intense O(N²)
+
 ## Density Clustering
+
+### DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
+
+- For each point selected randomly:
+    1. Search distance **ε** around point and how many other points are inside:
+        - If the number of other points is greater than **n**:
+            - The point is a cluster
+                - If there is some other cluster inside the **ε** area:
+                    - The point belongs to the same cluster
+                - If there isn't:
+                    - The point's cluster is new
+        - If the number of other points is less than **n**:
+            - It is a Noise Point
+
+**ε:** Epsilon<br>
+**n:** Minimum number
+
+```python
+from sklearn import datasets, cluster
+
+X = datasets.load_iris().data
+
+db = cluster.DBSCAN(eps=0.5, min_sample=5)
+
+db.fit_predict(X)
+```
+### Advantages
+- We don't need to specify the number of clusters
+- Flexibility in the shapes & sizes of clusters
+- Able to deal with noise and outliers
+
+### Disadvantage
+- Border points that are reachable from two clusters
+- Face difficulty finding clusters of varying densities (HDBSCAN)
