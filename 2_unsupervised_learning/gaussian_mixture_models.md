@@ -51,4 +51,18 @@ clustering = gmm.predict(X)
 
 - Feature Selection/Extraction: PCA (principle components analysis)
 - Clustering Algorithm Selection & Tuning: We also have to choose a proximity measure (Euclidean Measure/Cosine Similarity/Pearson Correlation)
-- Clustering Validation: 
+- Clustering Validation: How well a clustering turn out to be. Scoring methods to evaluate the quality of the clustering structure based on certain criteria (Indices).
+- Results Interpretation: Insights (Domain expertise)
+
+![clusana](clusana.png)
+
+### Cluster Validation
+The procedure of evaluating the results of a clustering objectively and quantitatively
+
+Categories of cluster validation indicies:
+- External indices: We use if our data was originally labeled
+- Internal indices: Measure the fit between the data and the structure using only the data
+- Relative indices: indicate which of two clustering structures is better in some sense (all internal indices can be a relative indices)
+
+- Compactness: a measure of how close the elements of a cluster are to each other
+- Separability 
