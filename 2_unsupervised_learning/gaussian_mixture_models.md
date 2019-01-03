@@ -1,7 +1,7 @@
 # Gaussian Mixture Models
 Assumes that each cluster follows a certain statistical distribution (Gaussian distribution). Gives the probability of a point belonging to each of **k** clusters.
 
-![gaussianmixture](gauss.png) k=2
+![gaussianmixture](images/gauss.png) k=2
 
 ## Expectation Maximization Algorithm
 
@@ -9,17 +9,17 @@ Assumes that each cluster follows a certain statistical distribution (Gaussian d
 
 2. Soft-Cluster data - "Expectation": Calculate the membership of each to each clusters
 
-![Expectation](expectation.png)
+![Expectation](images/expectation.png)
 
 3. Re-Estimate the Gaussians - "Maximization": **Pondered**
 
-![NewMu](newmu.png)
-![NewVar](newvar.png)
+![NewMu](images/newmu.png)
+![NewVar](images/newvar.png)
 
 4. Evaluate Log-Likelihood to check for convergence
     - If not: repeat step 2 until converged
 
-![loglike](loglike.png)
+![loglike](images/loglike.png)
 - The higher this number is, the more sure we are taht the mixer model fits the dataset that we have. The purpose here is to maximize this value
 - π: The mixing coefficient
 
@@ -54,7 +54,7 @@ clustering = gmm.predict(X)
 - Clustering Validation: How well a clustering turn out to be. Scoring methods to evaluate the quality of the clustering structure based on certain criteria (Indices).
 - Results Interpretation: Insights (Domain expertise)
 
-![clusana](clusana.png)
+![clusana](images/clusana.png)
 
 ### Cluster Validation
 The procedure of evaluating the results of a clustering objectively and quantitatively
