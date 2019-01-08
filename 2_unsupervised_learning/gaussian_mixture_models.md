@@ -101,3 +101,14 @@ X' = (X - Xmin) / (Xmax - Xmin)
 
 - 0 <= X' <= 1
 - Outliers can kind of mess up your rescaling
+
+```python
+from sklearn.preprocessing import MinMaxScaler
+import numpy as np
+
+weights = np.array([[115.], [140.], [175.]])
+
+scaler = MinMaxScaler()
+
+rescaled_weight = scaler.fit_transform(weights)
+```
